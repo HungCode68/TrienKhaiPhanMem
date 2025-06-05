@@ -1,13 +1,7 @@
 pipeline {
     agent any
 
-    stage('Checkout') {
-    steps {
-        git branch: 'main', url: 'https://github.com/HungCode68/TrienKhaiPhanMem.git'
-    }
-}
-
-
+    stages {
         stage('Build') {
             steps {
                 echo 'Đang build project...'
