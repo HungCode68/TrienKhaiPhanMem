@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Home.css" />
+    <script src="Home.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>GaranHung</title>
+  </head>
+  <body>
+    <!--   Đây là code takbar -->
+    <header>
+      <div class="nav">
+        <a href="Home.html" class="anh1">GÀ RÁN POPI</a>
+        <a href="KhuyenMai.html" class="taskbar">Khuyến Mãi</a>
+        <a href="ThucDon.html" class="taskbar">Thực Đơn</a>
+        <a href="CuaHang.html" class="taskbar">Cửa Hàng</a>
+        <a href="TheoDoiDonHang.html" class="taskbar">Theo Dõi Đơn Hàng</a>
+        <a href="#" class="taskbar">Reward</a>
+        <button
+          class="takbar"
+          id="btn-open"
+          style="background-color: rgb(255, 125, 3)"
+        >
+          <i class="fa-solid fa-user fa-xl" style="color: #ffffff"></i>
+        </button>
+        <a href="GioHang.html" class="takbar"
+          ><i
+            class="fa-solid fa-basket-shopping fa-lg"
+            style="color: #ffffff"
+          ></i
+        ></a>
+      </div>
+    </header>
+    <!--   Đây là hết code takbar -->
+    <section class="promo-banner">
+      <div class="promo-slide-container" id="promoSlideContainer">
+        <div class="promo-slide">
+          <img src="Food/Advs.png" alt="" />
+          <div class="promo-text">
+            <h2>Popi</h2>
+            <p>Kiếm điểm thưởng và nhận voucher!</p>
+          </div>
+        </div>
+        <div class="promo-slide">
+          <img src="Food/Food2.png" alt="" />
+          <div class="promo-text">
+            <h2>Pop Wings</h2>
+            <p>Cánh gà rán giòn đẳng cấp thế giới</p>
+          </div>
+        </div>
+        <div class="promo-slide">
+          <img src="Food/Food3.png" alt="" />
+          <div class="promo-text">
+            <h2>Mua 1 tặng 1</h2>
+            <p>Special offer cho từng món ăn</p>
+          </div>
+        </div>
+      </div>
+      <button class="arrow left-arrow" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Đặt đồ ăn -->
+
+    <main>
+      <div class="search-bar">
+        <input type="text" placeholder="Vui lòng nhập địa chỉ nhận hàng" />
+        <button class="choice-button">Giao hàng tận nơi</button>
+        <button class="choice-button">Đặt đến lấy</button>
+        <button class="search-button"><i class="fa fa-search"></i></button>
+      </div>
+
+      <div class="menu-section">
+        <h2>Món ngon phải thử</h2>
+        <div class="product-card">
+          <img src="Food/Food2.png" alt="" />
+          <p>Thứ 4 Mua 1 Tặng 1 – Mua 3 Miếng Tặng 3 Miếng 141K</p>
+          <p>252.000 đ</p>
+        </div>
+        <div class="product-card">
+          <img src="Food/Foo1.png" alt="" />
+          <p>Thứ 4 Mua 1 Tặng 1 – Mua 2 Miếng Tặng 2 Miếng 104K</p>
+          <p>178.000 đ</p>
+        </div>
+        <div class="product-card">
+          <img src="Food/Food3.png" alt="" />
+          <p>Combo Tiệc Gà 99K - 4 Miếng Gà +2 Nước</p>
+          <p>178.000 đ</p>
+        </div>
+        <div class="product-card">
+          <img src="Food/Food2.png" alt="" />
+          <p>2 Gà Tắm Nước Mắm +2 Gà Giòn +2 Nước 115K</p>
+          <p>192.000 đ</p>
+        </div>
+        <button class="view-menu">Xem thêm thực đơn</button>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">GÀ RÁN POOPI</div>
+        <p>Hotline đặt hàng nhanh chóng: 19006008</p>
+        <nav class="footer-links">
+          <a href="#">Về chúng tôi</a>
+          <a href="#">Dịch vụ</a>
+          <a href="#">Tuyển dụng</a>
+          <a href="#">Liên hệ</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- giao dien login -->
+    <div id="wrapper">
+      <div id="modal-container">
+        <div id="modal">
+          <div class="modal-header">
+            <h3>Đăng nhập</h3>
+            <button id="btn-close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label for="phone">Số điện thoại</label>
+            <br />
+            <input type="text" id="phone" class="nhap1" placeholder="Nhập số điện thoại" />
+            <br />
+            <br />
+            <label for="password">Mật khẩu</label>
+            <br />
+            <input type="password" id="password" class="nhap1" placeholder="Nhập mật khẩu" />
+            <br />
+            <a href="#" class="ten1">Quên mật khẩu</a>
+            <br />
+            <br />
+            <button type="button" class="btn-submit" id="login-btn">Đăng nhập</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+      const btn_open = document.getElementById("btn-open");
+      const btn_close = document.getElementById("btn-close");
+      const modal_container = document.getElementById("modal-container");
+      btn_open.addEventListener("click", () => {
+        modal_container.classList.add("show");
+      });
+      btn_close.addEventListener("click", () => {
+        modal_container.classList.remove("show");
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        const loginButton = document.getElementById("login-btn");
+       
+        const adminCredentials = {
+          phone: "1234567890",  
+          password: "admin123" 
+        };
+
+        loginButton.addEventListener("click", function() {
+          const phone = document.getElementById("phone").value;
+          const password = document.getElementById("password").value;
+
+          if (phone === adminCredentials.phone && password === adminCredentials.password) {
+            window.location.href = "admin.html";  // Chuyển hướng đến trang admin
+          } else {
+            alert("Invalid login credentials! Please try again.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
